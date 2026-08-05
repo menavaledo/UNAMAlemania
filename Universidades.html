@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fuente-->
+    <link rel=stylesheet href=index.css
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!--Íconos bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Ícono de pestaña-->
+    <link rel="icon" href="img/logovertical_negro.png" alt="Logo UNAM Alemania Vertical">
+    <title>Aliados | Universidades</title>
+
+    <!-- Cookie Banner-->
+    <link rel="stylesheet" href="cookies.css">
+    <script async src="cookies.js"></script>
+
+</head>
+
+
+<body>
+    <!--Cookies y privacidad-->
+    <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
+        &#x1F36A; Este sitio web utiliza cookies para brindarte una mejor experiencia.
+        <a href="https://www.cookiesandyou.com/" target="blank">Saber más</a>
+        <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">
+            De acuerdo
+        </button>
+    </div>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#23315D;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="Quienes-somos.html" role="button"
+                        data-bs-toggle="dropdown">¿Quiénes somos?</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="MisionVisionObjetivos.html">Misión y visión</a></li>
+                        <li><a class="dropdown-item" href="MisionVisionObjetivos.html#objetivos">Objetivos</a></li>
+                        <li><a class="dropdown-item" href="historia.html">Historia</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="alianzas.html" role="button"
+                        data-bs-toggle="dropdown">Aliados</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Universidades.html">Universidades</a></li>
+                        <li><a class="dropdown-item" href="Instituciones.html">Instituciones</a></li>
+                        <li><a class="dropdown-item" href="convenios.html">Convenios</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="eventos.html" role="button"
+                        data-bs-toggle="dropdown">Eventos</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="proximos.html">Próximos</a></li>
+                        <li><a class="dropdown-item" href="archivo.html">Archivo</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="interes.html" role="button" data-bs-toggle="dropdown">RED
+                        PUMA</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="estudiantes.html">Estudiantes</a></li>
+                        <li><a class="dropdown-item" href="academicos.html">Academicos</a></li>
+                        <li><a class="dropdown-item" href="egresados.html">Egresados</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="recursos.html" role="button"
+                        data-bs-toggle="dropdown">Notas y recursos</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Gaceta.html">Gaceta</a></li>
+                        <li><a class="dropdown-item" href="UNAMglobal.html">UNAM Global</a></li>
+                        <li><a class="dropdown-item" href="recursos.html">Recursos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+<div class="idiomasbtns col-auto text-end" style="position: relative; margin-right: 20px">
+    <div id="langDropdown" style="position:relative;">
+
+        <button id="langBtn" style="background:transparent; border:1px solid #ccc; border-radius:4px; padding:4px 10px; display:flex; align-items:center; gap:6px; cursor:pointer;">
+            <img id="flagImg" src="img/mexico_flag.png" style="width:22px; height:14px; object-fit:cover;">
+            <span id="flagTxt" style="font-size:12px; font-weight:500; color:#fff;">ES</span>
+            <span style="font-size:10px; color:#fff;">▼</span>
+        </button>
+
+        <div id="langMenu" style="display:none; position:absolute; right:0; top:110%; background:#fff; border:1px solid #ddd; border-radius:4px; box-shadow:0 4px 12px rgba(0,0,0,0.1); z-index:999; min-width:80px;">
+            <a href="Universidades.html" style="display:flex; align-items:center; gap:8px; padding:8px 12px; text-decoration:none; color:#1A3554; font-size:12px; border-bottom:1px solid #eee;">
+                <img src="img/mexico_flag.png" style="width:22px; height:14px; object-fit:cover;"> ES
+            </a>
+            <a href="UniversidadesDE.html" style="display:flex; align-items:center; gap:8px; padding:8px 12px; text-decoration:none; color:#1A3554; font-size:12px; border-bottom:1px solid #eee;">
+                <img src="img/germany_flag.png" style="width:22px; height:14px; object-fit:cover;"> DE
+            </a>
+            <a href="UniversidadesEN.html" style="display:flex; align-items:center; gap:8px; padding:8px 12px; text-decoration:none; color:#1A3554; font-size:12px;">
+                <img src="img/uk_flag.png" style="width:22px; height:14px; object-fit:cover;"> EN
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    var p = window.location.pathname.toLowerCase();
+    var fi = document.getElementById('flagImg');
+    var ft = document.getElementById('flagTxt');
+    if (p.includes('de.') || p.includes('deutsch')) {
+        fi.src = 'img/germany_flag.png'; ft.textContent = 'DE';
+    } else if (p.includes('en.') || p.includes('eng')) {
+        fi.src = 'img/uk_flag.png'; ft.textContent = 'EN';
+    }
+
+    document.getElementById('langBtn').addEventListener('click', function(e) {
+        e.stopPropagation();
+        var m = document.getElementById('langMenu');
+        m.style.display = m.style.display === 'none' ? 'block' : 'none';
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!document.getElementById('langDropdown').contains(e.target)) {
+            document.getElementById('langMenu').style.display = 'none';
+        }
+    });
+</script>
+
+    </nav>
+</header>
+
+    <!-- HERO -->
+    <section class="alianzas-hero">
+        <h1>Aliados</h1>
+        <p>Universidades e instituciones con las que la UNAM tiene convenio en Alemania</p>
+    </section>
+
+    <!-- UNIVERSIDADES -->
+    <section class="alianzas-section">
+        <h2>Universidades</h2>
+        <br>
+        <br>
+        <div class="uni-grid">
+
+            <a href="https://www.fu-berlin.de" target="_blank" class="uni-card">
+                <img src="img/Universidad/FUB.jpg" alt="Freie Universität Berlin">
+                <span class="uni-name">Freie Universität Berlin</span>
+            </a>
+
+            <a href="https://www.uni-jena.de" target="_blank" class="uni-card">
+                <img src="img/Universidad/FSUJ.jpg" alt="Friedrich Schiller Universität Jena">
+                <span class="uni-name">Friedrich Schiller Universität Jena</span>
+            </a>
+
+            <a href="https://www.uni-goettingen.de" target="_blank" class="uni-card">
+                <img src="img/Universidad/GAUG.png" alt="Georg August Universität Göttingen">
+                <span class="uni-name">Georg August Universität Göttingen</span>
+            </a>
+
+            <a href="https://www.hof-university.de" target="_blank" class="uni-card">
+                <img src="img/Universidad/HHUAS.png" alt="Hochschule Hof University of Applied Sciences">
+                <span class="uni-name">Hochschule Hof University of Applied Sciences</span>
+            </a>
+
+            <a href="https://www.hu-berlin.de" target="_blank" class="uni-card">
+                <img src="img/Universidad/HUB.png" alt="Humboldt-Universität zu Berlin">
+                <span class="uni-name">Humboldt-Universität zu Berlin</span>
+            </a>
+
+            <a href="https://www.uni-giessen.de" target="_blank" class="uni-card">
+                <img src="img/Universidad/JLUG.png" alt="Justus Liebig Universität Giessen">
+                <span class="uni-name">Justus Liebig Universität Giessen</span>
+            </a>
+
+            <a href="https://www.kit.edu" target="_blank" class="uni-card">
+                <img src="img/Universidad/KIT.png" alt="Karlsruhe Institute of Technology">
+                <span class="uni-name">Karlsruhe Institute of Technology</span>
+            </a>
+
+            <a href="https://www.uni-hannover.de" target="_blank" class="uni-card">
+                <img src="img/Universidad/LUH.png" alt="Leibniz Universität Hannover">
+                <span class="uni-name">Leibniz Universität Hannover</span>
+            </a>
+
+            <a href="https://www.lmu.de" target="_blank" class="uni-card">
+                <img src="img/Universidad/LMUM.jfif" alt="Ludwig Maximilians Universität München">
+                <span class="uni-name">Ludwig Maximilians Universität München</span>
+            </a>
+
+            <a href="https://www.uni-marburg.de" target="_blank" class="uni-card">
+                <img src="img/Universidad/PUM.png" alt="Philipps Universität Marburg">
+                <span class="uni-name">Philipps Universität Marburg</span>
+            </a>
+
+            <a href="https://www.th-deg.de" target="_blank" class="uni-card">
+                <img src="img/Universidad/THD.png" alt="Technische Hochschule Deggendorf">
+                <span class="uni-name">Technische Hochschule Deggendorf</span>
+            </a>
+
+            <a href="https://www.tu-braunschweig.de" target="_blank" class="uni-card">
+                <img src="img/Universidad/TUB.png" alt="Technische Universität Braunschweig">
+                <span class="uni-name">Technische Universität Braunschweig</span>
+            </a>
+
+            <a href="https://www.tum.de" target="_blank" class="uni-card">
+                <img src="img/Universidad/TUM.png" alt="Technische Universität München">
+                <span class="uni-name">Technische Universität München</span>
+            </a>
+
+            <a href="https://www.uni-augsburg.de" target="_blank" class="uni-card">
+                <img src="img/Universidad/AU.jpg" alt="Universität Augsburg">
+                <span class="uni-name">Universität Augsburg</span>
+            </a>
+
+            <a href="https://www.uni-erfurt.de" target="_blank" class="uni-card">
+                <img src="img/Universidad/EU.jfif" alt="Universität Erfurt">
+                <span class="uni-name">Universität Erfurt</span>
+            </a>
+
+            <a href="https://www.uni-heidelberg.de/en" target="_blank" class="uni-card">
+                <img src="img/Universidad/UH.jpg" alt="Universität Heidelberg">
+                <span class="uni-name">Universität Heidelberg</span>
+            </a>
+
+            <a href="https://www.uni-kassel.de" target="_blank" class="uni-card">
+                <img src="img/Universidad/UK.png" alt="Universität Kassel">
+                <span class="uni-name">Universität Kassel</span>
+            </a>
+
+            <a href="https://www.uni-siegen.de" target="_blank" class="uni-card">
+                <img src="img/Universidad/USiegen.png" alt="Universität Siegen">
+                <span class="uni-name">Universität Siegen</span>
+            </a>
+
+            <a href="https://www.uni-stuttgart.de" target="_blank" class="uni-card">
+                <img src="img/Universidad/UStuttgart.png" alt="Universität Stuttgart">
+                <span class="uni-name">Universität Stuttgart</span>
+            </a>
+
+            <a href="https://www.uni-tuebingen.de" target="_blank" class="uni-card">
+                <img src="img/Universidad/UT.png" alt="Universität Tübingen">
+                <span class="uni-name">Universität Tübingen</span>
+            </a>
+
+            <a href="https://www.hsbi.de" target="_blank" class="uni-card">
+                <img src="img/Universidad/HSBI.jpg" alt="HSBI Bielefeld">
+                <span class="uni-name">HSBI Bielefeld</span>
+            </a>
+
+            <a href="https://www.europa-uni.de" target="_blank" class="uni-card">
+                <img src="img/Universidad/EUVF.png" alt="European University Viadrina in Frankfurt (Oder)">
+                <span class="uni-name">European University Viadrina in Frankfurt (Oder)</span>
+            </a>
+
+            <a href="https://www.thi.de" target="_blank" class="uni-card">
+                <img src="img/Universidad/THI.jpg" alt="Technische Hochschule Ingolstadt">
+                <span class="uni-name">Technische Hochschule Ingolstadt</span>
+            </a>
+
+        </div>
+    </section>
+
+
+
+</body>
+<!--Footer-->
+<footer>
+    <section class="footer" style="margin-top: auto;">
+        <h3
+            style="color: rgba(255,255,255,0.6); font-size: 20px; font-weight: 500; margin-bottom: 5px; text-align: center;">
+            Sitios de
+            Interés</h3>
+        <!-- Logos -->
+
+        <div
+            style="display: flex; align-items: center; justify-content: center; gap: 25px; padding-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.15); flex-wrap: wrap;">
+
+            <a href="http://www.alemania.unam.mx/"><img src="img/logohorizontal_blanco.png" alt="Logo 1"
+                    style="height: 80px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+            <a href="https://crai.unam.mx/"><img src="img/logo_crai.png" alt="Logo 2"
+                    style="height: 80px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+            <a href="https://www.unam.mx/"><img src="img/logo_UNAM.png" alt="Logo 3"
+                    style="height: 130px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+            <a href="https://cepe.unam.mx/"><img src="img/logoCEPE_Negro.png" alt="Logo 4"
+                    style="height: 70px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+            <a href="https://unamglobal.unam.mx/"><img src="img/Logo_UNAMGlobal.png" alt="Logo 5"
+                    style="height: 80px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+            <a href="https://www.unaminternacional.unam.mx/"><img src="img/DGECI_LOGO.png" alt="Logo 6"
+                    style="height: 80px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+        </div>
+        </div>
+
+        <!-- Aviso y copyright -->
+        <div style="margin-top: 20px; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+            <a class="avisoPriv" href="pdf/Aviso_Privacidad_Alemania.pdf" target="_blank">
+                Aviso de Privacidad Integral de la UNAM en Alemania
+            </a>
+            <p class="copyright">UNAM Alemania @ 2025</p>
+        </div>
+
+    </section>
+</footer>
+
+</html>

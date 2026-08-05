@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="img/logovertical_negro.png">
+    <title>Startseite – UNAM Deutschland</title>
+    <link rel="stylesheet" href="cookies.css">
+    <script async src="cookies.js"></script>
+</head>
+
+<body>
+
+    <!-- Cookies -->
+    <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
+        &#x1F36A; Diese Website verwendet Cookies, um Ihnen ein besseres Erlebnis zu bieten.
+        <a href="https://www.cookiesandyou.com/" target="blank">Mehr erfahren</a>
+        <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">
+            Einverstanden
+        </button>
+    </div>
+
+    <!-- HEADER / NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#23315D;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="indexDeutsch.html">Startseite</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Über uns</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Mission & Vision</a></li>
+                            <li><a class="dropdown-item" href="#">Ziele</a></li>
+                            <li><a class="dropdown-item" href="#">Geschichte</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Partner</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Universitäten</a></li>
+                            <li><a class="dropdown-item" href="#">Institutionen</a></li>
+                            <li><a class="dropdown-item" href="#">Abkommen</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Veranstaltungen</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Bevorstehende</a></li>
+                            <li><a class="dropdown-item" href="#">Archiv</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">RED PUMA</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Studierende</a></li>
+                            <li><a class="dropdown-item" href="#">Akademiker</a></li>
+                            <li><a class="dropdown-item" href="#">Alumni</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Nachrichten & Ressourcen</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Gazette</a></li>
+                            <li><a class="dropdown-item" href="#">UNAM Global</a></li>
+                            <li><a class="dropdown-item" href="#">Ressourcen</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <div class="idiomasbtns col-auto text-end" style="position: relative; margin-right: 20px">
+    <div id="langDropdown" style="position:relative;">
+
+        <button id="langBtn" style="background:transparent; border:1px solid #ccc; border-radius:4px; padding:4px 10px; display:flex; align-items:center; gap:6px; cursor:pointer;">
+            <img id="flagImg" src="img/mexico_flag.png" style="width:22px; height:14px; object-fit:cover;">
+            <span id="flagTxt" style="font-size:12px; font-weight:500; color:#fff;">ES</span>
+            <span style="font-size:10px; color:#fff;">▼</span>
+        </button>
+
+        <div id="langMenu" style="display:none; position:absolute; right:0; top:110%; background:#fff; border:1px solid #ddd; border-radius:4px; box-shadow:0 4px 12px rgba(0,0,0,0.1); z-index:999; min-width:80px;">
+            <a href="index.html" style="display:flex; align-items:center; gap:8px; padding:8px 12px; text-decoration:none; color:#1A3554; font-size:12px; border-bottom:1px solid #eee;">
+                <img src="img/mexico_flag.png" style="width:22px; height:14px; object-fit:cover;"> ES
+            </a>
+            <a href="indexDE.html" style="display:flex; align-items:center; gap:8px; padding:8px 12px; text-decoration:none; color:#1A3554; font-size:12px; border-bottom:1px solid #eee;">
+                <img src="img/germany_flag.png" style="width:22px; height:14px; object-fit:cover;"> DE
+            </a>
+            <a href="indexEN.html" style="display:flex; align-items:center; gap:8px; padding:8px 12px; text-decoration:none; color:#1A3554; font-size:12px;">
+                <img src="img/uk_flag.png" style="width:22px; height:14px; object-fit:cover;"> EN
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    var p = window.location.pathname.toLowerCase();
+    var fi = document.getElementById('flagImg');
+    var ft = document.getElementById('flagTxt');
+    if (p.includes('de.') || p.includes('deutsch')) {
+        fi.src = 'img/germany_flag.png'; ft.textContent = 'DE';
+    } else if (p.includes('en.') || p.includes('eng')) {
+        fi.src = 'img/uk_flag.png'; ft.textContent = 'EN';
+    }
+
+    document.getElementById('langBtn').addEventListener('click', function(e) {
+        e.stopPropagation();
+        var m = document.getElementById('langMenu');
+        m.style.display = m.style.display === 'none' ? 'block' : 'none';
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!document.getElementById('langDropdown').contains(e.target)) {
+            document.getElementById('langMenu').style.display = 'none';
+        }
+    });
+</script>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <div style="width: 100%; overflow: hidden;">
+        <img src="img/portada_sitioweb_unam_alemania.jpg" alt="UNAM Deutschland"
+            style="width: 100%; display: block; object-fit: cover;">
+    </div>
+
+    <!-- INTRO -->
+    <section class="intro-breve">
+        <p>
+            Wir sind das Büro der UNAM in Deutschland: eine akademische Brücke, die Mobilität, institutionelle Zusammenarbeit und die Verbreitung der mexikanischen Sprache und Kultur in Europa fördert.
+        </p>
+        <a href="#" class="intro-breve-link">Mehr über uns erfahren →</a>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-section">
+        <div class="stat-item">
+            <span class="stat-num">23</span>
+            <span class="stat-label">Partneruniversitäten</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-num">8</span>
+            <span class="stat-label">Jahre Präsenz in Deutschland</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-num">13</span>
+            <span class="stat-label">UNAM-Büros weltweit</span>
+        </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section style="max-width: 760px; margin: 0 auto; padding: 0 5% 48px;">
+        <video style="width: 100%; border-radius: 12px; display: block;" controls autoplay muted loop>
+            <source src="img/video/Ingles_UNAMAlemania.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- KARUSSELL -->
+    <section class="carrusel-wrap">
+        <h2 class="carrusel-title">Aktuelle Ausschreibungen</h2>
+        <div id="carrusel" class="carrusel carousel slide carousel-fade">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Carrusel/Carrusel1.jpg" class="d-block w-100" alt="DFG">
+                    <div class="carousel-caption"><a href="https://www.dfg.de/en"><button class="carrusel-btn" style="background-color: goldenrod;">Ausschreibungen</button></a></div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carrusel/Carrusel2.jpg" class="d-block w-100" alt="DGECI">
+                    <div class="carousel-caption"><a href="https://www.unaminternacional.unam.mx/es/movilidad"><button class="carrusel-btn" style="background-color: goldenrod;">Ausschreibungen</button></a></div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carrusel/Carrusel3.jpg" class="d-block w-100" alt="CEPE">
+                    <div class="carousel-caption"><a href="https://cepe.unam.mx/#"><button class="carrusel-btn" style="background-color: goldenrod;">Ausschreibungen</button></a></div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carrusel/Carrusel4.jpg" class="d-block w-100" alt="DAAD">
+                    <div class="carousel-caption"><a href="https://www.daad.mx/es/"><button class="carrusel-btn" style="background-color: #23315D;">Ausschreibungen</button></a></div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carrusel/Carrusel5.jpg" class="d-block w-100" alt="Slide 5">
+                    <div class="carousel-caption"><a href="https://www.daad.mx/es/"><button class="carrusel-btn" style="background-color: #23315D;">Ausschreibungen</button></a></div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carrusel/Carrusel6.jpg" class="d-block w-100" alt="Slide 6">
+                    <div class="carousel-caption"><a href="https://www.daad.mx/es/"><button class="carrusel-btn" style="background-color: #23315D;">Ausschreibungen</button></a></div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Zurück</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Weiter</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- VERANSTALTUNGEN -->
+    <section class="eventos-section">
+        <h2 class="eventos-title">Bevorstehende Veranstaltungen</h2>
+        <div class="evento-row">
+            <div class="evento-fecha"><div class="evento-dia">16</div><div class="evento-mes">Juni</div></div>
+            <div class="evento-info"><p class="evento-titulo">Veranstaltungstitel 1</p><p class="evento-desc">Kurze Beschreibung der Veranstaltung, Referent oder Institution.</p></div>
+        </div>
+        <div class="evento-row">
+            <div class="evento-fecha"><div class="evento-dia">23</div><div class="evento-mes">Juni</div></div>
+            <div class="evento-info"><p class="evento-titulo">Veranstaltungstitel 2</p><p class="evento-desc">Kurze Beschreibung der Veranstaltung, Referent oder Institution.</p></div>
+        </div>
+        <div class="evento-row">
+            <div class="evento-fecha"><div class="evento-dia">30</div><div class="evento-mes">Juni</div></div>
+            <div class="evento-info"><p class="evento-titulo">Veranstaltungstitel 3</p><p class="evento-desc">Kurze Beschreibung der Veranstaltung, Referent oder Institution.</p></div>
+        </div>
+        <div class="evento-row">
+            <div class="evento-fecha"><div class="evento-dia">20</div><div class="evento-mes">Juli</div></div>
+            <div class="evento-info"><p class="evento-titulo">Veranstaltungstitel 4</p><p class="evento-desc">Kurze Beschreibung der Veranstaltung, Referent oder Institution.</p></div>
+        </div>
+        <div class="eventos-ver-mas"><a href="#">Mehr anzeigen →</a></div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <h2>Haben Sie Fragen oder möchten Sie mit uns zusammenarbeiten?</h2>
+        <p>Schreiben Sie uns und wir beraten Sie gerne zu Mobilität, Abkommen oder akademischen Aktivitäten.</p>
+        <a href="#" class="cta-btn">Kontakt aufnehmen</a>
+    </section>
+
+    <!-- KONTAKTFORMULAR -->
+    <section class="form-section">
+        <h2 class="form-title">Schreiben Sie uns</h2>
+        <p class="form-subtitle">Haben Sie Fragen zu Mobilität, Abkommen oder Aktivitäten? Hinterlassen Sie uns eine Nachricht und wir antworten Ihnen so schnell wie möglich.</p>
+        <form action="https://formsubmit.co/egomez@alemania.unam.mx" method="POST" class="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nombre">Name</label>
+                    <input type="text" id="nombre" name="Nombre" placeholder="Ihr vollständiger Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="Email" placeholder="ihre@email.de" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="asunto">Betreff</label>
+                <input type="text" id="asunto" name="Asunto" placeholder="Worüber schreiben Sie?" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Nachricht</label>
+                <textarea id="mensaje" name="Mensaje" rows="5" placeholder="Schreiben Sie Ihre Nachricht hier..." required></textarea>
+            </div>
+            <input type="hidden" name="_next" value="http://www.alemania.unam.mx/indexDeutsch.html">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="Neue Nachricht von der UNAM Deutschland Website">
+            <input type="hidden" name="_cc" value="loropeza@alemania.unam.mx">
+            <button type="submit" class="form-btn">Nachricht senden</button>
+        </form>
+    </section>
+
+    <!-- INSTAGRAM -->
+    <section class="instagram-section">
+        <h2 class="instagram-title">Folgen Sie uns auf Instagram</h2>
+        <p class="instagram-subtitle">@unamalemania</p>
+        <div class="instagram-wrap">
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div class="elfsight-app-d1a8ba84-bb0b-4eef-a9e3-b1262683653a" data-elfsight-app-lazy></div>
+        </div>
+    </section>
+
+
+<footer>
+        <section class="footer" style="margin-top: auto;">
+            <h3
+                style="color: rgba(255,255,255,0.6); font-size: 20px; font-weight: 500; margin-bottom: 5px; text-align: center;">
+                Interessante Seite</h3>
+            <!-- Logos -->
+
+            <div
+                style="display: flex; align-items: center; justify-content: center; gap: 25px; padding-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.15); flex-wrap: wrap;">
+
+                <a href="http://www.alemania.unam.mx/"><img src="img/logohorizontal_blanco.png" alt="Logo 1"
+                        style="height: 80px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+                <a href="https://crai.unam.mx/"><img src="img/logo_crai.png" alt="Logo 2"
+                        style="height: 80px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+                <a href="https://www.unam.mx/"><img src="img/logo_UNAM.png" alt="Logo 3"
+                        style="height: 130px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+                <a href="https://cepe.unam.mx/"><img src="img/logoCEPE_Negro.png" alt="Logo 4"
+                        style="height: 70px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+                <a href="https://unamglobal.unam.mx/"><img src="img/Logo_UNAMGlobal.png" alt="Logo 5"
+                        style="height: 80px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+                <a href="https://www.unaminternacional.unam.mx/"><img src="img/DGECI_LOGO.png" alt="Logo 6"
+                        style="height: 80px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+            </div>
+            </div>
+
+            <!-- Aviso y copyright -->
+            <div style="margin-top: 20px; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                <a class="avisoPriv" href="pdf/Aviso_Privacidad_Alemania.pdf" target="_blank">
+                    Datenschutzerklärung der UNAM in Deutschland
+                </a>
+                <p class="copyright">UNAM Deutschland @ 2026</p>
+            </div>
+
+        </section>
+    </footer>
+
+</body>
+</html>

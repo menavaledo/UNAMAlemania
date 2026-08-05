@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos – UNAM Alemania</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#23315D;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="Quienes-somos.html" role="button"
+                        data-bs-toggle="dropdown">¿Quiénes somos?</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="MisionVisionObjetivos.html">Misión y visión</a></li>
+                        <li><a class="dropdown-item" href="MisionVisionObjetivos.html#objetivos">Objetivos</a></li>
+                        <li><a class="dropdown-item" href="historia.html">Historia</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="alianzas.html" role="button"
+                        data-bs-toggle="dropdown">Aliados</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Universidades.html">Universidades</a></li>
+                        <li><a class="dropdown-item" href="Instituciones.html">Instituciones</a></li>
+                        <li><a class="dropdown-item" href="convenios.html">Convenios</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="eventos.html" role="button"
+                        data-bs-toggle="dropdown">Eventos</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="proximos.html">Próximos</a></li>
+                        <li><a class="dropdown-item" href="archivo.html">Archivo</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="interes.html" role="button" data-bs-toggle="dropdown">RED
+                        PUMA</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="estudiantes.html">Estudiantes</a></li>
+                        <li><a class="dropdown-item" href="academicos.html">Academicos</a></li>
+                        <li><a class="dropdown-item" href="egresados.html">Egresados</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="recursos.html" role="button"
+                        data-bs-toggle="dropdown">Notas y recursos</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Gaceta.html">Gaceta</a></li>
+                        <li><a class="dropdown-item" href="UNAMglobal.html">UNAM Global</a></li>
+                        <li><a class="dropdown-item" href="recursos.html">Recursos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+<div class="idiomasbtns col-auto text-end" style="position: relative; margin-right: 20px">
+    <div id="langDropdown" style="position:relative;">
+
+        <button id="langBtn" style="background:transparent; border:1px solid #ccc; border-radius:4px; padding:4px 10px; display:flex; align-items:center; gap:6px; cursor:pointer;">
+            <img id="flagImg" src="img/mexico_flag.png" style="width:22px; height:14px; object-fit:cover;">
+            <span id="flagTxt" style="font-size:12px; font-weight:500; color:#fff;">ES</span>
+            <span style="font-size:10px; color:#fff;">▼</span>
+        </button>
+
+        <div id="langMenu" style="display:none; position:absolute; right:0; top:110%; background:#fff; border:1px solid #ddd; border-radius:4px; box-shadow:0 4px 12px rgba(0,0,0,0.1); z-index:999; min-width:80px;">
+            <a href="UNAMglobal.html" style="display:flex; align-items:center; gap:8px; padding:8px 12px; text-decoration:none; color:#1A3554; font-size:12px; border-bottom:1px solid #eee;">
+                <img src="img/mexico_flag.png" style="width:22px; height:14px; object-fit:cover;"> ES
+            </a>
+            <a href="UNAMglobalDE.html" style="display:flex; align-items:center; gap:8px; padding:8px 12px; text-decoration:none; color:#1A3554; font-size:12px; border-bottom:1px solid #eee;">
+                <img src="img/germany_flag.png" style="width:22px; height:14px; object-fit:cover;"> DE
+            </a>
+            <a href="UNAMglobalEN.html" style="display:flex; align-items:center; gap:8px; padding:8px 12px; text-decoration:none; color:#1A3554; font-size:12px;">
+                <img src="img/uk_flag.png" style="width:22px; height:14px; object-fit:cover;"> EN
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    var p = window.location.pathname.toLowerCase();
+    var fi = document.getElementById('flagImg');
+    var ft = document.getElementById('flagTxt');
+    if (p.includes('de.') || p.includes('deutsch')) {
+        fi.src = 'img/germany_flag.png'; ft.textContent = 'DE';
+    } else if (p.includes('en.') || p.includes('eng')) {
+        fi.src = 'img/uk_flag.png'; ft.textContent = 'EN';
+    }
+
+    document.getElementById('langBtn').addEventListener('click', function(e) {
+        e.stopPropagation();
+        var m = document.getElementById('langMenu');
+        m.style.display = m.style.display === 'none' ? 'block' : 'none';
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!document.getElementById('langDropdown').contains(e.target)) {
+            document.getElementById('langMenu').style.display = 'none';
+        }
+    });
+</script>
+
+    </nav>
+</header>
+
+
+    <!-- HERO -->
+    <section class="alianzas-hero">
+        <h1>Eventos</h1>
+        <p>Actividades académicas, culturales y de vinculación de UNAM Alemania</p>
+    </section>
+
+    <!-- EVENTOS PASADOS -->
+    <section class="alianzas-section" id="pasados" style="background:#f7f8fc; max-width:100%; padding: 56px 5%;">
+        <div style="max-width:1100px; margin:0 auto;">
+            <h2
+                style="font-size:1.25rem; font-weight:600; color:#1A3554; margin-bottom:8px; padding-bottom:12px; border-bottom:2px solid #C9A227; display:inline-block;">
+                Eventos pasados</h2>
+            <p class="alianzas-intro">Registro de actividades académicas, culturales y de vinculación realizadas por
+                UNAM Alemania.</p>
+
+            <!-- EVENTO PASADO — duplica este bloque para cada evento -->
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo1.jpg" alt="Colaboración académica UNAM – Freie Universität Berlin">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">26 de Junio, 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Colaboración académica UNAM – Freie Universität Berlin</h3>
+                    <p class="ev-desc">Christian Lazar, de la Freie Universität Berlin, visitó UNAM Alemania en la
+                        International House. Fue recibido por la Dra. Yolanda Irasema Chirino López y Lucero Oropeza. Se
+                        dialogó sobre cooperación, movilidad académica, investigación e intercambio de conocimiento.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>International House</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo2.jfif" alt="Concierto: Fanny Hensel-Mendelssohn y Guadalupe Olmedo">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">23 de Junio, 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Concierto: Fanny Hensel-Mendelssohn y Guadalupe Olmedo</h3>
+                    <p class="ev-desc">Concierto coorganizado por la Embajada de México y UNAM Alemania para visibilizar
+                        a la alemana Fanny Hensel-Mendelssohn y la mexicana Guadalupe Olmedo, gracias a la investigación
+                        de la Dra. Monique Rasetti.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Embajada de México en Alemania</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo3.jpg"
+                        alt="Donación de la Colección Voz Viva al Instituto Ibero-Americano de Berlín">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">21 de Junio, 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Donación de la Colección Voz Viva al Instituto Ibero-Americano de Berlín</h3>
+                    <p class="ev-desc">La colección Voz Viva (400 h de grabaciones: Octavio Paz, Juan Rulfo, García
+                        Márquez y otros) fue donada al Instituto Ibero-Americano de Berlín en una ceremonia presidida
+                        por la Dra. Yolanda Irasema Chirino López y la Dra. Bárbara Göbel.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Ibero-aerikanisches institut</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo4.jpg" alt="Visita del Dr. Christian Sturm – TH Ingolstadt (THI)">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">29 de Mayo, 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Visita del Dr. Christian Sturm – TH Ingolstadt (THI)</h3>
+                    <p class="ev-desc">Recepción del Dr. Christian Sturm de la Technical University of Ingolstadt para
+                        fortalecer la movilidad estudiantil en ciberseguridad e inteligencia artificial. Se realizó un
+                        recorrido por CU y una reunión con el Dr. William Lee de la Coordinación de Relaciones
+                        Internacionales de la UNAM.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Coordinación de Relaciones y Asuntos internacionales, Ciudad
+                            Universitaria.</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo5.jpg" alt="Musical Exhibition: Fanny Hensel-Mendelssohn">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">25 de Mayo, 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Musical Exhibition: Fanny Hensel-Mendelssohn</h3>
+                    <p class="ev-desc">Concierto de piano con proyección audiovisual de Monique Rasetti (Facultad de
+                        Música, UNAM). Homenaje al legado de Fanny Hensel-Mendelssohn (1805-1847). Realizado en ZiF,
+                        Universidad de Bielefeld.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Universidad de Bielefeld.</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo6.jpg" alt="Visita a la Universidad de Bremen">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">23 de mayo, 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Visita a la Universidad de Bremen</h3>
+                    <p class="ev-desc">Encuentros con institutos de investigación en materiales híbridos, microsensores,
+                        física del estado sólido, física ambiental, percepción remota e historia del norte de México.
+                        Con los profesores Colombi Ciacchi, Lüssem, Eickhoff, Ladstätter-Weißenmeyer, Warneke y González
+                        de Reufels.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Universidad de Bremen</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo7.jpg" alt="Plática informativa sobre la Universidad Europea Viadrina – FES Acatlán">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">20 de mayo, 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Plática informativa sobre la Universidad Europea Viadrina – FES Acatlán</h3>
+                    <p class="ev-desc">Sesión informativa para estudiantes de FES Acatlán sobre oportunidades académicas
+                        y movilidad en la Universidad de Viadrina en Frankfurt Oder, Alemania. Con la Dra. Claudia
+                        Casiano de Viadrina y el Dr. José Antonio González, RURI de FES Acatlán y la biol. Evelyn
+                        Garfias representando a UNAM Alemania.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>FES Acatlán.</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo8.jpg" alt="Workshop: Impactos de microplásticos en la salud humana ">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">19 de mayo, 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Workshop: Impactos de microplásticos en la salud humana </h3>
+                    <p class="ev-desc"> Seminario Permanente de UNAM  Europa en Alemania, Berlín: "Human health impacts of microplastic exposure and challenges in their detection". Reunió especialistas, diplomáticos y académicos de múltiples instituciones internacionales.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Embajada de México en Alemania.</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo9.jpg" alt="Miradas Contemporáneas del Cine Mexicano – Frankfurt">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">8 de mayo, 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Miradas Contemporáneas del Cine Mexicano – Frankfurt</h3>
+                    <p class="ev-desc">Proyección especial de cortometrajes de estudiantes de la ENAC-UNAM. Encuentro de distintas voces del cine mexicano contemporáneo, con el apoyo de la ENAC-UNAM y el Consulado de México en Frankfurt.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Consulado de México en Frankfurt.</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo10.jpg" alt="ENAC Film Showcase 2026 – Universidad de Bielefeld">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">6 de mayo, 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">ENAC Film Showcase 2026 – Universidad de Bielefeld</h3>
+                    <p class="ev-desc">Proyección de cortometrajes y largometrajes de estudiantes de ENAC-UNAM en la Universidad de Bielefeld. Encuentro de cine, diálogo e intercambio cultural entre México y Alemania.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Universidad de Bielefeld.</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo11.jpg" alt="Reunión UNAM – Ministerio Federal de Ciencia, Tecnología y Espacio (BMFTR)">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">30 de abril, 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Reunión UNAM – Ministerio Federal de Ciencia, Tecnología y Espacio (BMFTR)</h3>
+                    <p class="ev-desc">Encuentro entre representantes de la UNAM y el BMFTR alemán para fortalecer la cooperación académica y científica, explorar oportunidades de investigación y desarrollar proyectos tecnológicos bilaterales.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Ciudad universitaria</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo12.jpg" alt="Titulación Internacional sin Fronteras – Miriam Andrea Matías Martínez">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">13 de abril, 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Titulación Internacional sin Fronteras – Miriam Andrea Matías Martínez</h3>
+                    <p class="ev-desc">La egresada Miriam Andrea Matías Martínez presentó su examen profesional de Lengua y Literatura Modernas desde la sede UNAM Alemania en Berlín, coordinado con la Facultad de Filosofía y Letras (FFyL). </p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>UNAM Alemania</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo13.jpg" alt="Cooperación UNAM Alemania – Technische Hochschule Ingolstadt (THI)">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">8 de abril, 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Cooperación UNAM Alemania – Technische Hochschule Ingolstadt (THI)</h3>
+                    <p class="ev-desc">La directora de UNAM Alemania visito la Technische Hochschule  Ingolstadt, incluyendo CARISSMA (centro de investigación en seguridad vehicular). Se identificaron áreas para proyectos conjuntos y movilidad académica en tecnología e innovación.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Technische</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo14.png" alt="Visita al Instituto de Energías Renovables de la UNAM">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">12 de marzo, 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Visita al Instituto de Energías Renovables de la UNAM</h3>
+                    <p class="ev-desc">La UNAM Alemania impartió una charla sobre movilidad académica hacia Alemania en el Instituto de Energías Renovables de la UNAM.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Instituto de Energías Renovables de la UNAM.</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo15.png" alt="Workshop: Plasma Emission upon Laser Irradiation for Carbon Narrowing in Steel Production">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">23 de marzo, 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Workshop: Plasma Emission upon Laser Irradiation for Carbon Narrowing in Steel Production</h3>
+                    <p class="ev-desc">UNAM Alemania participó en un workshop sobre innovación México-Alemania en ciencia y tecnología aplicada a la producción de acero, en colaboración con el Instituto de Ingeniería de la UNAM.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Instituto de Ingeniería</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo16.jpg" alt="UNAM Alemania presente en el Workshop: Building Bridges in Vaccine Chemistry">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">27 de marzo, 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">UNAM Alemania presente en el Workshop: Building Bridges in Vaccine Chemistry</h3>
+                    <p class="ev-desc">Este encuentro es uno de los resultados del Mexican Science Day, realizado en noviembre en la Embajada de México en Alemania, una iniciativa que busca fortalecer la cooperación científica entre ambos países. Durante el workshop, especialistas, estudiantes e investigadores participaron en ponencias y actividades sobre química de vacunas, vectores virales, nanopartículas proteicas, virología estructural y microscopía de super-resolución.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i> Embajada de México en Alemania</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo17.jpg" alt="Desde el Instituto de Ingeniería hacia Alemania: Estancias, Investigación y Maestrías">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">4 de marzo, 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Desde el Instituto de Ingeniería hacia Alemania: Estancias, Investigación y Maestrías</h3>
+                    <p class="ev-desc">El instituto de Ingeniería de la UNAM fue sede de una charla sobre oportunidades academicas en Alemania. Durante la plática se difundieron diversas opciones para realizar: estancias de investigación, posgrados y maestrias en Alemania, programas de colaboración academica internacional.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Instituto de Ingeniería</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo18.jpg" alt="Se reúnen para tejer horizontes académicos la sede UNAM Alemania y el instituto de matemáticas">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">26 de febrero, 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Se reúnen para tejer horizontes académicos la sede UNAM Alemania y el instituto de matemáticas</h3>
+                    <p class="ev-desc">El Instituto de Investigaciones en Matemáticas Aplicadas en Sistemas fue el punto de encuentro para la Dra. Yolanda Chirino, directora de la sede UNAM Alemania y el Dr. Ramsés Humberto Mena Chávez, director de IIMAS. Durante la reunión se dialogó sobre nuevas oportunidades de colaboración académica con especial énfasis en la difusión de becas de investigación en Alemania.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>IIMAS</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo19.jpg" alt="Primer Simposio & Workshop GEMEX-NAT Alianza Alemania - México en Productos Nacturales">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">23 - 24 de febrero, 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Primer Simposio & Workshop GEMEX-NAT Alianza Alemania - México en Productos Nacturales</h3>
+                    <p class="ev-desc"> El primer simposio & Workshop GEMEX-NAT Alianza Alemania-México en Productos Naturales”,organizado por  la Facultad de Química y la UNAM Alemania buscó estrechar lazos científicos entre ambas naciones, explorar la diversidad química de los productos naturales, así como analizar las más recientes estrategias en el diseño de fármacos y la transferencia tecnológica para dar soluciones a los retos globales de salud.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Facultad de Química.</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo20.jpg" alt="La sede UNAM Alemania invita a los estudiantes de la facultad de química a participar en los programas de intercambio">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">6 de febrero, 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">La sede UNAM Alemania invita a los estudiantes de la facultad de química a participar en los programas de intercambio</h3>
+                    <p class="ev-desc">Más que una plática informativa, un impulso para atreverse a estudiar en el extranjero. Este jueves 5 de abril, la Facultad de Química fue sede de pláticas informativas para quienes desean vivir una experiencia académica internacional.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Facultad de Química.</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo21.jpg" alt="Encuentro entre la Facultad de Economía y la sede UNAM Alemania">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">8 de enero, 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Encuentro entre la Facultad de Economía y la sede UNAM Alemania</h3>
+                    <p class="ev-desc">La Facultad de Economía fue sede de una reunión de trabajo con la sede UNAM Alemania para impulsar la cooperación académica internacional y abrir nuevas oportunidades de colaboración.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Facultad de Economía</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo22.jpg" alt="Visita ENES Juriquilla – Sede UNAM Alemania">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">12 de diciembre, 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Visita ENES Juriquilla – Sede UNAM Alemania</h3>
+                    <p class="ev-desc">La Dra. Yolanda Chirino, titular de UNAM-Alemania, visitó la ENES Juriquilla para fortalecer la colaboración académica y de difusión cultural, que iniciará con la presentación de la Muestra Fílmica ENAC en la Universität Bielefeld en mayo de 2026.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>ENES Juriquilla</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo23.jpg" alt="UNAM Alemania y HSBI Bielefeld: nuevos horizontes para movilidad estudiantil">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">26 de noviembre, 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">UNAM Alemania y HSBI Bielefeld: nuevos horizontes para movilidad estudiantil</h3>
+                    <p class="ev-desc">UNAM Alemania visitó la Universidad de Ciencias Aplicadas de Bielefeld (HSBI), con reunión con el Decano de Negocios Dr. Riza Öztürk y la Dra. Eika Auschner. En la Facultad de Ingeniería y Matemáticas se realizó un recorrido por el Proyecto Da Vinci, donde estudiantes internacionales recrean inventos de Leonardo da Vinci.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>HSBI.</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo24.jpg" alt="Representatives from UNAM held a Meeting with the University of Kassel">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">7 de noviembre, 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Representatives from UNAM held a Meeting with the University of Kassel</h3>
+                    <p class="ev-desc">Durante la reunión, el Dr. William Lee, Coordinador de Relaciones y Asuntos Internacionales (CRAI), y la Dra. Yolanda Chirino, Directora de la UNAM Alemania, junto con la Prof. Dra. Ute Clement, Rectora de la Universidad de Kassel, y el Dr. Randolf Oberschmidt, Jefe de la División de Internacionalización y Cooperación Internacional, reafirmaron su firme compromiso con la colaboración y exploraron nuevas e interesantes oportunidades para proyectos conjuntos en sostenibilidad , docencia, seminarios sobre temas globales y cultura y arte.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>University of Kassel</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo25.jpg" alt="Mexican Science Day – Berlin Science Week 2025">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">4 de noviembre, 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Mexican Science Day – Berlin Science Week 2025</h3>
+                    <p class="ev-desc">UNAM Alemania participó en el Mexican Science Day: "Science connects: Mexico & Germany – Beyond Now", en Berlín, con charlas, mesas redondas y un Science Slam con jóvenes científicos sobre innovación, inteligencia artificial y cooperación global.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Berlín</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo26.jpg" alt="Conferencia de Internacionalización en Humanidades y Ciencias Sociales">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">17 de octubre, 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Conferencia de Internacionalización en Humanidades y Ciencias Sociales</h3>
+                    <p class="ev-desc">Encuentro entre investigadores de México y Alemania (FUB, TUB, LAI, IAI, CEPHCIS y UDIR) sobre cooperación académica e internacionalización en Humanidades y Ciencias Sociales: literatura de viajes, urbanización en América Latina, impresos populares, humanidades digitales y conflictos normativos.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>UNAM Alemania</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+             <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo27.jpg" alt="UNAM-Alemania y la Embajada de México en Alemania fortalecen vínculos">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">13 de octubre, 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">UNAM-Alemania y la Embajada de México en Alemania fortalecen vínculos</h3>
+                    <p class="ev-desc">La directora de UNAM-Alemania, Yolanda Chirino, y el embajador de México en Alemania, Francisco Quiroga, dialogaron sobre cooperación educativa, cultural y artística en el edificio de la Embajada (diseñado por Francisco Serrano y Teodoro González de León, inspirado en Chichén Itzá).</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Embajada de México en Alemania</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo28.jpg" alt="Coloquio: The Ethical Dimension of Chemistry and Life Sciences ">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">10 de octubre, 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Coloquio: The Ethical Dimension of Chemistry and Life Sciences </h3>
+                    <p class="ev-desc">La Facultad de Química fue sede de este coloquio sobre los retos éticos de las ciencias químicas y de la vida, con la participación del Dr. Jan Mehlich, investigador de la Universidad de Bonn, en representación de Alemania.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Facultad de Química</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo29.jpg" alt="Mesa Redonda: El legado de Alexander von Humboldt">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">29 de septiembre, 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Mesa Redonda: El legado de Alexander von Humboldt</h3>
+                    <p class="ev-desc">En El Colegio Nacional, la Asociación de exbecarios y premiados de la Fundación Humboldt en México reflexionó sobre la influencia de Humboldt en la divulgación del conocimiento, con expertos en vulcanología, química, biodiversidad, educación y cambio climático. UNAM Alemania estuvo presente; cambio de mesa directiva: Dra. Angélica Zepeda (presidenta) y Eusebio Juaristi (vicepresidente).</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Fundación Humboldt en México</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo30.jpg" alt="UNAM-Alemania y DAAD México estrechan lazos de cooperación académica">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">26 de septiembre, 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">UNAM-Alemania y DAAD México estrechan lazos de cooperación académica</h3>
+                    <p class="ev-desc">Reunión con Christoph Hansert, Mariana Luna y Katrin Blank del Servicio Alemán de Intercambio Académico (DAAD) México, para abrir caminos de colaboración que fortalezcan la vinculación entre la UNAM y Alemania.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>DAAD México</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo32.jpeg" alt="Colloquium: The Ethical Dimension of Chemistry and Life Sciences">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">9 y 10 de octubre, 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Colloquium: The Ethical Dimension of Chemistry and Life Sciences</h3>
+                    <p class="ev-desc">Convocatoria al coloquio organizado por la Secretaría Académica de Investigación y Posgrado de la Facultad de Química y UNAM-Alemania, con mesas redondas y networking entre expertas y expertos nacionales e internacionales. Contacto: Dra. Elisa Núñez Acosta.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Facultad de Química</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo33.jpg" alt="Taller: La psicología positiva para el entendimiento cultural – FCA">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">29 de agosto, 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Taller: La psicología positiva para el entendimiento cultural – FCA</h3>
+                    <p class="ev-desc">La Facultad de Contaduría y Administración recibió a profesoras de la Universidad de Ciencias Aplicadas de Bielefeld, quienes impartieron el taller. La Dra. Yolanda Chirino presentó la oferta de becas en Alemania y se sostuvo una reunión para fortalecer la movilidad académica.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>FCyA</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo34.png" alt="Taller en ENES Juriquilla: Psicología Positiva para el Entendimiento Intercultural ">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">25 de agosto, 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Taller en ENES Juriquilla: Psicología Positiva para el Entendimiento Intercultural </h3>
+                    <p class="ev-desc">Un nuevo puente intercultural: la ENES Juriquilla recibió a la Dra. Yolanda Irasema Chirino López, quien compartió un diálogo sobre estancias académicas en Alemania. Taller impartido por la Dra. Eika Auschner y la Dra. Barbara Steinmann (Universidad de Ciencias Aplicadas de Bielefeld). Organización: Dr. Heriberto Ruiz Tafoya.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>ENES Juriquilla</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo35.jpeg" alt="Taller interactivo: La Psicología Positiva para el Entendimiento Intercultural ">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">27 de agosto, 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Taller interactivo: La Psicología Positiva para el Entendimiento Intercultural</h3>
+                    <p class="ev-desc">Estrategia de Vinculación Internacional UNAM Alemania–HSBI. Taller con las Dras. Eika Auschner y Barbara Steinmann, de la Universidad de Ciencias Aplicadas de Bielefeld, sobre resiliencia, autoconciencia y el modelo PERMA en entornos multiculturales.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>FCyA</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo36.jpg" alt="Taller Psicología Positiva en ENES Juriquilla (con vista del campus)">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">23 de agosto, 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Taller Psicología Positiva en ENES Juriquilla (con vista del campus)</h3>
+                    <p class="ev-desc">La ENES Juriquilla fue sede del taller "Psicología positiva para el entendimiento intercultural", impartido por profesoras de la Universidad de Ciencias Aplicadas de Bielefeld. La Dra. Yolanda Chirino presentó la oferta de becas en Alemania y se sostuvo una reunión entre autoridades de la ENES, UNAM Alemania y la CAMEXA.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>ENES Juriquilla</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <section class="footer" style="margin-top: auto;">
+            <h3
+                style="color: rgba(255,255,255,0.6); font-size: 20px; font-weight: 500; margin-bottom: 5px; text-align: center;">
+                Sitios de
+                Interés</h3>
+            <!-- Logos -->
+
+            <div
+                style="display: flex; align-items: center; justify-content: center; gap: 25px; padding-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.15); flex-wrap: wrap;">
+
+                <a href="http://www.alemania.unam.mx/"><img src="img/logohorizontal_blanco.png" alt="Logo 1"
+                        style="height: 80px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+                <a href="https://crai.unam.mx/"><img src="img/logo_crai.png" alt="Logo 2"
+                        style="height: 80px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+                <a href="https://www.unam.mx/"><img src="img/logo_UNAM.png" alt="Logo 3"
+                        style="height: 130px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+                <a href="https://cepe.unam.mx/"><img src="img/logoCEPE_Negro.png" alt="Logo 4"
+                        style="height: 70px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+                <a href="https://unamglobal.unam.mx/"><img src="img/Logo_UNAMGlobal.png" alt="Logo 5"
+                        style="height: 80px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+                <a href="https://www.unaminternacional.unam.mx/"><img src="img/DGECI_LOGO.png" alt="Logo 6"
+                        style="height: 80px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+            </div>
+            </div>
+
+            <!-- Aviso y copyright -->
+            <div style="margin-top: 20px; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                <a class="avisoPriv" href="pdf/Aviso_Privacidad_Alemania.pdf" target="_blank">
+                    Aviso de Privacidad Integral de la UNAM en Alemania
+                </a>
+                <p class="copyright">UNAM Alemania @ 2025</p>
+            </div>
+
+        </section>
+    </footer>
+
+
+
+</body>
+
+</html>

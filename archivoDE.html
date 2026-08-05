@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos – UNAM-Deutschland.</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#23315D;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="Quienes-somos.html" role="button"
+                        data-bs-toggle="dropdown">¿Quiénes somos?</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="MisionVisionObjetivos.html">Misión y visión</a></li>
+                        <li><a class="dropdown-item" href="MisionVisionObjetivos.html#objetivos">Objetivos</a></li>
+                        <li><a class="dropdown-item" href="historia.html">Historia</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="alianzas.html" role="button"
+                        data-bs-toggle="dropdown">Aliados</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Universidades.html">Universidades</a></li>
+                        <li><a class="dropdown-item" href="Instituciones.html">Instituciones</a></li>
+                        <li><a class="dropdown-item" href="convenios.html">Convenios</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="eventos.html" role="button"
+                        data-bs-toggle="dropdown">Eventos</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="proximos.html">Próximos</a></li>
+                        <li><a class="dropdown-item" href="archivo.html">Archivo</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="interes.html" role="button" data-bs-toggle="dropdown">RED
+                        PUMA</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="estudiantes.html">Estudiantes</a></li>
+                        <li><a class="dropdown-item" href="academicos.html">Academicos</a></li>
+                        <li><a class="dropdown-item" href="egresados.html">Egresados</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="recursos.html" role="button"
+                        data-bs-toggle="dropdown">Notas y recursos</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Gaceta.html">Gaceta</a></li>
+                        <li><a class="dropdown-item" href="UNAMglobal.html">UNAM Global</a></li>
+                        <li><a class="dropdown-item" href="recursos.html">Recursos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+<div class="idiomasbtns col-auto text-end" style="position: relative; margin-right: 20px">
+    <div id="langDropdown" style="position:relative;">
+
+        <button id="langBtn" style="background:transparent; border:1px solid #ccc; border-radius:4px; padding:4px 10px; display:flex; align-items:center; gap:6px; cursor:pointer;">
+            <img id="flagImg" src="img/mexico_flag.png" style="width:22px; height:14px; object-fit:cover;">
+            <span id="flagTxt" style="font-size:12px; font-weight:500; color:#fff;">ES</span>
+            <span style="font-size:10px; color:#fff;">▼</span>
+        </button>
+
+        <div id="langMenu" style="display:none; position:absolute; right:0; top:110%; background:#fff; border:1px solid #ddd; border-radius:4px; box-shadow:0 4px 12px rgba(0,0,0,0.1); z-index:999; min-width:80px;">
+            <a href="UNAMglobal.html" style="display:flex; align-items:center; gap:8px; padding:8px 12px; text-decoration:none; color:#1A3554; font-size:12px; border-bottom:1px solid #eee;">
+                <img src="img/mexico_flag.png" style="width:22px; height:14px; object-fit:cover;"> ES
+            </a>
+            <a href="UNAMglobalDE.html" style="display:flex; align-items:center; gap:8px; padding:8px 12px; text-decoration:none; color:#1A3554; font-size:12px; border-bottom:1px solid #eee;">
+                <img src="img/germany_flag.png" style="width:22px; height:14px; object-fit:cover;"> DE
+            </a>
+            <a href="UNAMglobalEN.html" style="display:flex; align-items:center; gap:8px; padding:8px 12px; text-decoration:none; color:#1A3554; font-size:12px;">
+                <img src="img/uk_flag.png" style="width:22px; height:14px; object-fit:cover;"> EN
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    var p = window.location.pathname.toLowerCase();
+    var fi = document.getElementById('flagImg');
+    var ft = document.getElementById('flagTxt');
+    if (p.includes('de.') || p.includes('deutsch')) {
+        fi.src = 'img/germany_flag.png'; ft.textContent = 'DE';
+    } else if (p.includes('en.') || p.includes('eng')) {
+        fi.src = 'img/uk_flag.png'; ft.textContent = 'EN';
+    }
+
+    document.getElementById('langBtn').addEventListener('click', function(e) {
+        e.stopPropagation();
+        var m = document.getElementById('langMenu');
+        m.style.display = m.style.display === 'none' ? 'block' : 'none';
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!document.getElementById('langDropdown').contains(e.target)) {
+            document.getElementById('langMenu').style.display = 'none';
+        }
+    });
+</script>
+
+    </nav>
+</header>
+    <!-- HERO -->
+    <section class="alianzas-hero">
+        <h1>Eventos</h1>
+        <p>Actividades académicas, culturales y de vinculación de UNAM-Deutschland.</p>
+    </section>
+
+    <!-- EVENTOS PASADOS -->
+    <section class="alianzas-section" id="pasados" style="background:#f7f8fc; max-width:100%; padding: 56px 5%;">
+        <div style="max-width:1100px; margin:0 auto;">
+            <h2
+                style="font-size:1.25rem; font-weight:600; color:#1A3554; margin-bottom:8px; padding-bottom:12px; border-bottom:2px solid #C9A227; display:inline-block;">
+                Eventos pasados</h2>
+            <p class="alianzas-intro">Registro de actividades académicas, culturales y de vinculación realizadas por
+                UNAM-Deutschland..</p>
+
+            <!-- EVENTO PASADO -->
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo1.jpg" alt="Akademische Zusammenarbeit UNAM – Freie Universität Berlin">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">26. Juni 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Akademische Zusammenarbeit UNAM – Freie Universität Berlin</h3>
+                    <p class="ev-desc">Christian Lazar von der Freien Universität Berlin besuchte den Sitz UNAM-Deutschland im International House und wurde dort von Dr. Yolanda Irasema Chirino López und Lucero Oropeza empfangen. Im Mittelpunkt des Gesprächs standen Kooperationsmöglichkeiten, akademische Mobilität, Forschung und Wissensaustausch.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>International House</span>
+                        <span><i class="bi bi-person-video2"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo2.jfif" alt="Konzert: Fanny Hensel-Mendelssohn und Guadalupe Olmedo">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">23. Juni 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Konzert: Fanny Hensel-Mendelssohn und Guadalupe Olmedo</h3>
+                    <p class="ev-desc">Die Mexikanische Botschaft und der Sitz UNAM-Deutschland veranstalteten gemeinsam ein Konzert, um auf das Wirken der deutschen Komponistin Fanny Hensel-Mendelssohn und der mexikanischen Künstlerin Guadalupe Olmedo aufmerksam zu machen – ermöglicht durch die Forschungsarbeit von Dr. Monique Rasetti.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Mexikanische Botschaft in Deutschland</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo3.jpg"
+                        alt="Schenkung der Sammlung „Voz Viva“ an das Ibero-Amerikanische Institut Berlin">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">21. Juni 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Schenkung der Sammlung „Voz Viva“ an das Ibero-Amerikanische Institut Berlin</h3>
+                    <p class="ev-desc">Die Sammlung „Voz Viva“ – rund 400 Stunden Tonaufnahmen, unter anderem von Octavio Paz, Juan Rulfo und Gabriel García Márquez – wurde dem Ibero-Amerikanischen Institut Berlin im Rahmen einer Zeremonie unter der Leitung von Dr. Yolanda Irasema Chirino López und Dr. Bárbara Göbel übergeben.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Ibero-aerikanisches institut</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo4.jpg" alt="Besuch von Dr. Christian Sturm – Technische Hochschule Ingolstadt (THI)">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">29. Mai 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Besuch von Dr. Christian Sturm – Technische Hochschule Ingolstadt (THI)</h3>
+                    <p class="ev-desc">Dr. Christian Sturm von der Technischen Hochschule Ingolstadt wurde empfangen, um die studentische Mobilität in den Bereichen Cybersicherheit und Künstliche Intelligenz zu stärken. Im Rahmen des Besuchs standen ein Rundgang über den Campus sowie ein Treffen mit Dr. William Lee von der Coordinación de Relaciones Internacionales der UNAM auf dem Programm.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Coordinación de Relaciones y Asuntos Internacionales, Ciudad Universitaria</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo5.jpg" alt="Musical Exhibition: Fanny Hensel-Mendelssohn">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">25. Mai 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Musical Exhibition: Fanny Hensel-Mendelssohn</h3>
+                    <p class="ev-desc">Monique Rasetti von der Facultad de Música der UNAM gab, mit audiovisueller Begleitung, ein Klavierkonzert zu Ehren von Fanny Hensel-Mendelssohn (1805–1847). Die Veranstaltung fand im ZiF der Universität Bielefeld statt.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Universität Bielefeld</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo6.jpg" alt="Besuch der Universität Bremen">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">23. Mai 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Besuch der Universität Bremen</h3>
+                    <p class="ev-desc">Bei mehreren Treffen mit Forschungsinstituten ging es um Hybridwerkstoffe, Mikrosensorik, Festkörperphysik, Umweltphysik, Fernerkundung sowie die Geschichte Nordmexikos. Teilgenommen haben die Professorinnen und Professoren Colombi Ciacchi, Lüssem, Eickhoff, Ladstätter-Weißenmeyer, Warneke und González de Reufels.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Universität Bremen</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo7.jpg" alt="Informationsveranstaltung zur Europa-Universität Viadrina – FES Acatlán">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">20. Mai 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Informationsveranstaltung zur Europa-Universität Viadrina – FES Acatlán</h3>
+                    <p class="ev-desc">Studierende der FES Acatlán erhielten Informationen zu akademischen Möglichkeiten und Mobilitätsprogrammen an der Europa-Universität Viadrina in Frankfurt (Oder). Es referierten Dr. Claudia Casiano (Viadrina) und Dr. José Antonio González, RURI der FES Acatlán, sowie Biol. Evelyn Garfias als Vertreterin des Sitzes UNAM-Deutschland.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>FES Acatlán.</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo8.jpg" alt="Workshop: Auswirkungen von Mikroplastik auf die menschliche Gesundheit">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">19. Mai 20266</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Workshop: Auswirkungen von Mikroplastik auf die menschliche Gesundheit</h3>
+                    <p class="ev-desc">Im Rahmen des Ständigen Seminars von UNAM Europa in Deutschland fand in Berlin der Workshop „Human health impacts of microplastic exposure and challenges in their detection“ statt, der Fachleute, Diplomatinnen und Diplomaten sowie Wissenschaftlerinnen und Wissenschaftler aus zahlreichen internationalen Institutionen zusammenbrachte.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Mexikanische Botschaft in Deutschland</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo9.jpg" alt="Zeitgenössische Perspektiven des mexikanischen Kinos – Frankfurt">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">8. Mai 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Zeitgenössische Perspektiven des mexikanischen Kinos – Frankfurt</h3>
+                    <p class="ev-desc">Studierende der ENAC-UNAM zeigten in einer Sondervorführung ihre Kurzfilme und gaben damit Einblick in die Vielfalt des zeitgenössischen mexikanischen Kinos. Die Veranstaltung wurde von der ENAC-UNAM und dem Mexikanischen Konsulat in Frankfurt unterstützt.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i> Mexikanisches Konsulat in Frankfurt</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo10.jpg" alt="ENAC Film Showcase 2026 – Universität Bielefeld">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">6. Mai 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">ENAC Film Showcase 2026 – Universität Bielefeld</h3>
+                    <p class="ev-desc">Studierende der ENAC-UNAM präsentierten an der Universität Bielefeld Kurz- und Spielfilme – eine Begegnung von Film, Dialog und kulturellem Austausch zwischen Mexiko und Deutschland.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Universität Bielefeld</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo11.jpg" alt="Treffen zwischen der UNAM und dem Bundesministerium für Forschung, Technologie und Raumfahrt (BMFTR)">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">30. April 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Treffen zwischen der UNAM und dem Bundesministerium für Forschung, Technologie und Raumfahrt (BMFTR)</h3>
+                    <p class="ev-desc">Vertreterinnen und Vertreter der UNAM und des BMFTR trafen sich, um die wissenschaftlich-akademische Zusammenarbeit auszubauen, neue Forschungsmöglichkeiten zu identifizieren und gemeinsame technologische Projekte zu entwickeln.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Ciudad universitaria</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo12.jpg" alt="Internationale Titelverleihung ohne Grenzen – Miriam Andrea Matías Martínez">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">13. April 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Internationale Titelverleihung ohne Grenzen – Miriam Andrea Matías Martínez</h3>
+                    <p class="ev-desc">Die Absolventin Miriam Andrea Matías Martínez legte ihre Abschlussprüfung in Moderner Sprache und Literatur vom Sitz UNAM-Deutschland in Berlin ab, in Abstimmung mit der Facultad de Filosofía y Letras.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>UNAM-Deutschland.</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo13.jpg" alt="Zusammenarbeit zwischen UNAM-Deutschland und der Technischen Hochschule Ingolstadt (THI)">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">8. April 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Zusammenarbeit zwischen UNAM-Deutschland und der Technischen Hochschule Ingolstadt (THI)</h3>
+                    <p class="ev-desc">Die Leiterin des Sitzes UNAM-Deutschland besuchte die Technische Hochschule Ingolstadt, unter anderem das Forschungszentrum für Fahrzeugsicherheit CARISSMA. Dabei wurden mögliche gemeinsame Projekte sowie Mobilitätsmöglichkeiten im Bereich Technologie und Innovation identifiziert.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Technische Hochschule Ingolstadt</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo14.png" alt="Besuch am Instituto de Energías Renovables der UNAM">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">12. März 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Besuch am Instituto de Energías Renovables der UNAM</h3>
+                    <p class="ev-desc">La UNAM-Deutschland. impartió una charla sobre movilidad académica hacia Alemania en el Instituto de Energías Renovables de la UNAM.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Instituto de Energías Renovables de la UNAM.</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo15.png" alt="Workshop: Plasma Emission upon Laser Irradiation for Carbon Narrowing in Steel Production">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">23.März 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Workshop: Plasma Emission upon Laser Irradiation for Carbon Narrowing in Steel Production</h3>
+                    <p class="ev-desc">Der Sitz UNAM-Deutschland nahm, in Zusammenarbeit mit dem Instituto de Ingeniería der UNAM, an einem deutsch-mexikanischen Workshop zu Innovationen in Wissenschaft und Technik im Bereich der Stahlproduktion teil.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Instituto de Ingeniería</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo16.jpg" alt="UNAM-Deutschland beim Workshop „Building Bridges in Vaccine Chemistry“">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">27. März 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">UNAM-Deutschland beim Workshop „Building Bridges in Vaccine Chemistry“</h3>
+                    <p class="ev-desc">Diese Veranstaltung ging aus dem Mexican Science Day hervor, der im November in der Mexikanischen Botschaft in Deutschland stattfand – einer Initiative zur Stärkung der wissenschaftlichen Zusammenarbeit zwischen beiden Ländern. Fachleute, Studierende und Forschende diskutierten in Vorträgen und weiteren Formaten Themen wie Impfstoffchemie, virale Vektoren, Proteinnanopartikel, Strukturvirologie und hochauflösende Mikroskopie.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Mexikanische Botschaft in Deutschland</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo17.jpg" alt="Vom Instituto de Ingeniería nach Deutschland: Forschungsaufenthalte, Promotion und Masterstudium">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">4.März 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Vom Instituto de Ingeniería nach Deutschland: Forschungsaufenthalte, Promotion und Masterstudium</h3>
+                    <p class="ev-desc">Das Instituto de Ingeniería der UNAM war Gastgeber eines Vortrags über akademische Möglichkeiten in Deutschland. Vorgestellt wurden unter anderem Forschungsaufenthalte, Promotions- und Masterprogramme sowie internationale Kooperationsprogramme..</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Instituto de Ingeniería</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo18.jpg" alt="Der Sitz UNAM-Deutschland und das Institut für Mathematik knüpfen neue akademische Verbindungen">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">26. Februar 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Der Sitz UNAM-Deutschland und das Institut für Mathematik knüpfen neue akademische Verbindungen</h3>
+                    <p class="ev-desc">Das Instituto de Investigaciones en Matemáticas Aplicadas y en Sistemas (IIMAS) war Treffpunkt für Dr. Yolanda Chirino, Leiterin des Sitzes UNAM-Deutschland, und Dr. Ramsés Humberto Mena Chávez, Direktor des IIMAS. Im Gespräch ging es um neue Kooperationsmöglichkeiten, insbesondere um die Verbreitung von Forschungsstipendien in Deutschland.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>IIMAS</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo19.jpg" alt="Erstes Symposium & Workshop GEMEX-NAT – Deutsch-Mexikanische Allianz für Naturstoffe">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">23 - 24. Februar 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Erstes Symposium & Workshop GEMEX-NAT – Deutsch-Mexikanische Allianz für Naturstoffe</h3>
+                    <p class="ev-desc">Organisiert von der Facultad de Química und dem Sitz UNAM-Deutschland, zielte die Veranstaltung darauf ab, die wissenschaftlichen Beziehungen zwischen beiden Ländern zu vertiefen, die chemische Vielfalt von Naturstoffen zu erkunden und aktuelle Strategien der Wirkstoffentwicklung sowie des Technologietransfers im Hinblick auf globale Gesundheitsherausforderungen zu analysieren.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Facultad de Química.</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo20.jpg" alt="Der Sitz UNAM-Deutschland lädt Chemiestudierende zur Teilnahme an Austauschprogrammen ein">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">6. Februar 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Der Sitz UNAM-Deutschland lädt Chemiestudierende zur Teilnahme an Austauschprogrammen ein</h3>
+                    <p class="ev-desc">Mehr als eine Informationsveranstaltung – ein Anstoß, den Schritt ins Ausland zu wagen: Am Donnerstag, den 5. April, war die Facultad de Química Gastgeberin von Informationsveranstaltungen für alle, die internationale akademische Erfahrungen sammeln möchten.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>UNAM-Deutschland.</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo21.jpg" alt="Begegnung zwischen der Facultad de Economía und dem Sitz UNAM-Deutschland">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">8. Januar 2026</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Begegnung zwischen der Facultad de Economía und dem Sitz UNAM-Deutschland</h3>
+                    <p class="ev-desc">Die Facultad de Economía war Gastgeberin eines Arbeitstreffens mit dem Sitz UNAM-Deutschland, um die internationale akademische Zusammenarbeit voranzutreiben und neue Kooperationsmöglichkeiten zu eröffnen.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Facultad de Economía</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo22.jpg" alt="Besuch der ENES Juriquilla beim Sitz UNAM-Deutschland">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">12. Dezember 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Besuch der ENES Juriquilla beim Sitz UNAM-Deutschland</h3>
+                    <p class="ev-desc">Dr. Yolanda Chirino, Leiterin von UNAM-Deutschland, besuchte die ENES Juriquilla, um die akademische und kulturelle Zusammenarbeit zu stärken. Den Auftakt bildet die Präsentation der Filmreihe ENAC an der Universität Bielefeld im Mai 2026.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>ENES Juriquilla</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo23.jpg" alt="UNAM-Deutschland und HSBI Bielefeld: neue Perspektiven für die studentische Mobilität">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">26. November 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">UNAM-Deutschland und HSBI Bielefeld: neue Perspektiven für die studentische Mobilität</h3>
+                    <p class="ev-desc">UNAM-Deutschland besuchte die Hochschule Bielefeld (HSBI) und traf dort den Dekan des Fachbereichs Wirtschaft, Dr. Riza Öztürk, sowie Dr. Eika Auschner. Im Fachbereich Ingenieurwissenschaften und Mathematik stand zudem ein Rundgang durch das Da-Vinci-Projekt auf dem Programm, bei dem internationale Studierende Erfindungen Leonardo da Vincis nachbauen.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>HSBI.</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo24.jpg" alt="Vertreterinnen und Vertreter der UNAM trafen sich mit der Universität Kassel">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">7. November 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Vertreterinnen und Vertreter der UNAM trafen sich mit der Universität Kassel</h3>
+                    <p class="ev-desc">Bei diesem Treffen bekräftigten Dr. William Lee, Koordinator für Internationale Beziehungen und Angelegenheiten (CRAI), und Dr. Yolanda Chirino, Leiterin von UNAM-Deutschland, gemeinsam mit Prof. Dr. Ute Clement, Präsidentin der Universität Kassel, und Dr. Randolf Oberschmidt, Leiter der Abteilung für Internationalisierung und internationale Kooperation, ihr Engagement für die Zusammenarbeit und sondierten neue Möglichkeiten für gemeinsame Projekte in den Bereichen Nachhaltigkeit, Lehre, Seminare zu globalen Themen sowie Kunst und Kultur.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Universität Kassel</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo25.jpg" alt="Mexican Science Day – Berlin Science Week 2025">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">4. November 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Mexican Science Day – Berlin Science Week 2025</h3>
+                    <p class="ev-desc">UNAM-Deutschland nahm am Mexican Science Day teil: „Science connects: Mexico & Germany – Beyond Now“ in Berlin, mit Vorträgen, Podiumsdiskussionen und einem Science Slam, bei dem junge Wissenschaftlerinnen und Wissenschaftler über Innovation, Künstliche Intelligenz und globale Zusammenarbeit sprachen.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Berlín</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo26.jpg" alt="Konferenz zur Internationalisierung in den Geistes- und Sozialwissenschaften">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">17. Oktober 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Konferenz zur Internationalisierung in den Geistes- und Sozialwissenschaften</h3>
+                    <p class="ev-desc">Forschende aus Mexiko und Deutschland (FUB, TUB, LAI, IAI, CEPHIS und UDIR) tauschten sich über akademische Zusammenarbeit und Internationalisierung in den Geistes- und Sozialwissenschaften aus. Themen waren unter anderem Reiseliteratur, Urbanisierung in Lateinamerika, Populärdrucke, Digital Humanities und normative Konflikte.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>UNAM-Deutschland.</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+             <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo27.jpg" alt="UNAM-Deutschland und die Mexikanische Botschaft in Deutschland vertiefen ihre Beziehungen">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">13. Oktober 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">UNAM-Deutschland und die Mexikanische Botschaft in Deutschland vertiefen ihre Beziehungen</h3>
+                    <p class="ev-desc">Die Leiterin von UNAM-Deutschland, Yolanda Chirino, und der mexikanische Botschafter in Deutschland, Francisco Quiroga, sprachen im Botschaftsgebäude über die Zusammenarbeit in Bildung, Kultur und Kunst. Das von Francisco Serrano und Teodoro González de León entworfene Gebäude ist von Chichén Itzá inspiriert.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Mexikanische Botschaft in Deutschland</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo28.jpg" alt="Kolloquium: The Ethical Dimension of Chemistry and Life Sciences">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">10. Oktober 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Kolloquium: The Ethical Dimension of Chemistry and Life Sciences</h3>
+                    <p class="ev-desc">Die Facultad de Química war Gastgeberin dieses Kolloquiums zu den ethischen Herausforderungen der Chemie- und Lebenswissenschaften, an dem Dr. Jan Mehlich von der Universität Bonn als Vertreter Deutschlands teilnahm.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Facultad de Química</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo29.jpg" alt="Podiumsdiskussion: Das Vermächtnis Alexander von Humboldts">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">29. September 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Podiumsdiskussion: Das Vermächtnis Alexander von Humboldts</h3>
+                    <p class="ev-desc">Im El Colegio Nacional reflektierte der Verband ehemaliger Humboldt-Stipendiatinnen und -Stipendiaten sowie -Preisträgerinnen und -Preisträger in Mexiko über den Einfluss Humboldts auf die Wissensvermittlung, gemeinsam mit Fachleuten aus Vulkanologie, Chemie, Biodiversität, Bildung und Klimawandel. UNAM-Deutschland war ebenfalls vertreten; im Zuge eines Vorstandswechsels wurden Dr. Angélica Zepeda (Vorsitzende) und Eusebio Juaristi (stellvertretender Vorsitzender) gewählt.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Fundación Humboldt en México</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo30.jpg" alt="UNAM-Deutschland und der DAAD Mexiko vertiefen die akademische Zusammenarbeit">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">26. September 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">UNAM-Deutschland und der DAAD Mexiko vertiefen die akademische Zusammenarbeit</h3>
+                    <p class="ev-desc">Bei einem Treffen mit Christoph Hansert, Mariana Luna und Katrin Blank vom Deutschen Akademischen Austauschdienst (DAAD) Mexiko wurden neue Wege der Zusammenarbeit zwischen UNAM und Deutschland eröffnet.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>DAAD Mexiko</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo32.jpeg" alt="Colloquium: The Ethical Dimension of Chemistry and Life Sciences">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">9 und 10. Oktober 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Colloquium: The Ethical Dimension of Chemistry and Life Sciences</h3>
+                    <p class="ev-desc">Die Secretaría Académica de Investigación und Posgrado de la Facultad de Química lud gemeinsam mit UNAM-Deutschland zu diesem Kolloquium ein, das Podiumsdiskussionen und Networking zwischen nationalen und internationalen Fachleuten bot. Kontakt: Dr. Elisa Núñez Acosta.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>Facultad de Química</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo33.jpg" alt="Workshop: Positive Psychologie für interkulturelles Verständnis – FCA">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">29. August 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Workshop: Positive Psychologie für interkulturelles Verständnis – FCA</h3>
+                    <p class="ev-desc">Die Facultad de Contaduría y Administración empfing Dozentinnen der Hochschule Bielefeld, die den Workshop leiteten. Dr. Yolanda Chirino stellte das Stipendienangebot für Deutschland vor, und im Anschluss fand ein Treffen zur Stärkung der akademischen Mobilität statt.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>FCyA</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo34.png" alt="Workshop an der ENES Juriquilla: Positive Psychologie für interkulturelles Verständnis">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">25. August 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Workshop an der ENES Juriquilla: Positive Psychologie für interkulturelles Verständnis</h3>
+                    <p class="ev-desc">Eine neue interkulturelle Brücke: Die ENES Juriquilla empfing Dr. Yolanda Irasema Chirino López zu einem Austausch über Studienaufenthalte in Deutschland. Den Workshop leiteten Dr. Eika Auschner und Dr. Barbara Steinmann (beide Hochschule Bielefeld); organisiert wurde die Veranstaltung von Dr. Heriberto Ruiz Tafoya.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>ENES Juriquilla</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo35.jpeg" alt="Interaktiver Workshop: Positive Psychologie für interkulturelles Verständnis">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">27. August 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Interaktiver Workshop: Positive Psychologie für interkulturelles Verständnis</h3>
+                    <p class="ev-desc">Im Rahmen der internationalen Vernetzungsstrategie zwischen UNAM-Deutschland und der HSBI leiteten Dr. Eika Auschner und Dr. Barbara Steinmann von der Hochschule Bielefeld einen Workshop zu Resilienz, Selbstwahrnehmung und dem PERMA-Modell in multikulturellen Kontexten.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>FCyA</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-row ev-pasado">
+                <div class="ev-thumb">
+                    <img src="img/archivo/archivo36.jpg" alt="Workshop Positive Psychologie an der ENES Juriquilla">
+                </div>
+                <div class="ev-body">
+                    <div class="ev-meta">
+                        <span class="ev-fecha">23. August 2025</span>
+                        <span class="ev-badge ev-badge-pasado">Pasado</span>
+                    </div>
+                    <h3 class="ev-titulo">Workshop Positive Psychologie an der ENES Juriquilla</h3>
+                    <p class="ev-desc">Die ENES Juriquilla war Gastgeberin des Workshops „Positive Psychologie für interkulturelles Verständnis“, geleitet von Dozentinnen der Hochschule Bielefeld. Dr. Yolanda Chirino stellte das Stipendienangebot für Deutschland vor; im Anschluss fand ein Treffen zwischen Vertreterinnen und Vertretern der ENES, von UNAM-Deutschland und der CAMEXA statt.</p>
+                    <div class="ev-meta-extra">
+                        <span><i class="bi bi-geo-alt"></i>ENES Juriquilla</span>
+                        <span><i class="bi bi-person-video2"></i>Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <section class="footer" style="margin-top: auto;">
+            <h3
+                style="color: rgba(255,255,255,0.6); font-size: 20px; font-weight: 500; margin-bottom: 5px; text-align: center;">
+                Sitios de
+                Interés</h3>
+            <!-- Logos -->
+
+            <div
+                style="display: flex; align-items: center; justify-content: center; gap: 25px; padding-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.15); flex-wrap: wrap;">
+
+                <a href="http://www.alemania.unam.mx/"><img src="img/logohorizontal_blanco.png" alt="Logo 1"
+                        style="height: 80px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+                <a href="https://crai.unam.mx/"><img src="img/logo_crai.png" alt="Logo 2"
+                        style="height: 80px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+                <a href="https://www.unam.mx/"><img src="img/logo_UNAM.png" alt="Logo 3"
+                        style="height: 130px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+                <a href="https://cepe.unam.mx/"><img src="img/logoCEPE_Negro.png" alt="Logo 4"
+                        style="height: 70px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+                <a href="https://unamglobal.unam.mx/"><img src="img/Logo_UNAMGlobal.png" alt="Logo 5"
+                        style="height: 80px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+                <a href="https://www.unaminternacional.unam.mx/"><img src="img/DGECI_LOGO.png" alt="Logo 6"
+                        style="height: 80px; object-fit: contain; filter: brightness(0) invert(1);"></a>
+            </div>
+            </div>
+
+            <!-- Aviso y copyright -->
+            <div style="margin-top: 20px; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                <a class="avisoPriv" href="pdf/Aviso_Privacidad_Alemania.pdf" target="_blank">
+                    Aviso de Privacidad Integral de la UNAM en Alemania
+                </a>
+                <p class="copyright">UNAM-Deutschland. @ 2025</p>
+            </div>
+
+        </section>
+    </footer>
+
+
+
+</body>
+
+</html>
